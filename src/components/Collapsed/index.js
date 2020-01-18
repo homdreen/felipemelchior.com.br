@@ -37,7 +37,7 @@ export default function Collapsed() {
 
       <ProfileLink to="/">
         <Avatar fixed={avatarImage.childImageSharp.fixed} />
-        <LogoText>FHM</LogoText>
+        <LogoText>fhm</LogoText>
       </ProfileLink>
 
       <MenuGroup>
