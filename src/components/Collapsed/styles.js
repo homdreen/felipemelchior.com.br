@@ -8,13 +8,13 @@ export const Container = styled.div`
   
   min-height: 100vh;
   height: 100%;
-  width: 70px;
+  width: 100px;
   padding: 10px;
 
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: space-between;
+  align-items: center;
 
   background: var(--sidebarBackground);
   transition: 0.2s background;

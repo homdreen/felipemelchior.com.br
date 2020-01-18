@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Avatar from '../Avatar';
@@ -24,13 +23,4 @@ export default function Profile() {
       <Description>{description}</Description>
     </Container>
   );
-}
-
-Profile.propTypes = {
-  site: PropTypes.shape({
-    siteMetadata: PropTypes.shape({
-      title: PropTypes.string,
-      description: PropTypes.string
-    })
-  })
 }

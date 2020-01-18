@@ -58,9 +58,8 @@ export const Tag = styled.div`
     background: var(--sidebarBackground);
     margin: 5px auto; 
   }
-}
-  
 `;
+
 export const PostTitle = styled.h1`
   font-size: 36px;
   margin-top: 20px;

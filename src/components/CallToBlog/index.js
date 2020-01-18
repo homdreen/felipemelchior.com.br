@@ -32,6 +32,9 @@ export default function CallToBlog() {
               description
               title
             }
+            fields {
+              slug
+            }
             timeToRead
           }
         }
@@ -45,9 +48,11 @@ export default function CallToBlog() {
 
       <PostList>
         {LatestPosts.map(({
-          node: { frontmatter: { category, date, description, title },
-           timeToRead }, 
-          }) => (
+          node: { 
+            frontmatter: { category, date, description, title },
+            fields: { slug },
+            timeToRead,
+          } }) => (
           <PostWrapper key={title}>
             <Tag>
               {category === 'InfoSec' ? (<Security />) : (<Dev />) }
@@ -64,7 +69,7 @@ export default function CallToBlog() {
               </PostTimeToRead>
             </PostInfo>
             <PostDescription>{description}</PostDescription>
-            <Continue to="/about">
+            <Continue to={slug}>
               continuar lendo...
             </Continue>
           </PostWrapper>
