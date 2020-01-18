@@ -28,14 +28,13 @@ export const MenuLink = styled(Link)`
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
-  border-bottom: 2px solid var(--inactive);
-  transition: color 0.2s, border-bottom 0.2s;
+  /* border-bottom: 2px solid var(--inactive); */
+  transition: color 0.2s;
 
  
 
   &:hover {
     color: var(--active);
-    border-bottom: 2px solid var(--active);
   }
 
   svg {
@@ -60,7 +59,6 @@ export const MenuItem = styled.li`
 
   .active {
     color: var(--active);
-    border-bottom: 2px solid var(--active);
   }
 `;
 

@@ -76,7 +76,6 @@ export default function Collapsed() {
       <CallToAction>Clique para abrir</CallToAction>
 
       <Dock position="left" fluid="true" dockStyle={{ background: '#5B2D89' }} isVisible={visible}>
-        <div onClick={() => setVisible(!visible)}>X</div>
         <Expanded />
       </Dock>
 
