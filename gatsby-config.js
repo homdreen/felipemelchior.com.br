@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Felipe Homrich Melchior`,
-    description: `Portfólio pertencente a Felipe Homrich Melchior, desenvolvedor e pesquisador de Segurança da Informação.`,
+    description: `Desenvolvedor Full Stack (Node.js, ReactJs e React Native) e Pesquisador de Segurança da Informação com foco em segurança ofensiva (pentest)`,
     author: `@felipemelchior`,
   },
   plugins: [
