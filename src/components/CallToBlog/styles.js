@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
+import { Link } from 'gatsby';
 
 export const Container = styled.div`
   height: 100%;
@@ -28,7 +29,6 @@ export const PostWrapper = styled.div`
   min-height: 250px;
   background: #fff;
   padding: 15px;
-  text-decoration: none;
   border-radius: 10px;
   margin-right: 15px;
   transition: background 0.5s;
@@ -39,21 +39,38 @@ export const PostWrapper = styled.div`
 `;
 
 export const Tag = styled.div`
+  display: block;
   width: 48px;
   height: 48px;
   margin: 0 auto;
   color: var(--sidebarBackground);
+  transition: color 0.5s;
+
+  &:hover {
+    color: #7159c1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--sidebarBackground);
+    margin: 5px auto; 
+  }
+}
   
 `;
 export const PostTitle = styled.h1`
   font-size: 36px;
   margin-top: 20px;
+  text-decoration: none;
+
 `;
 
 export const PostInfo = styled.div`
   display: flex;
   margin-top: 5px;
-
 `;
 
 export const PostDate = styled.span`
@@ -70,9 +87,9 @@ export const PostDate = styled.span`
 
 
 export const PostTimeToRead = styled.span`
+  margin-left: 15px;
   display: flex;
   align-items: center;
-  margin-left: 15px;
 
   svg {
     color: var(--sidebarBackground);
@@ -88,26 +105,28 @@ export const PostDescription = styled.p`
   line-height: 1.4;
 `;
 
-export const GoToBlog = styled.div`
+export const GoToBlog = styled(Link)`
   flex: 0.5;
   height: auto;
   min-height: 250px;
   background: #fff;
   border-radius: 10px;
-  text-decoration: none;
   padding: 15px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-decoration: none;
 
-  transition: background 0.5s;
+  transition: background 0.5s, color 0.5s;
+
+  &:hover, &:link, &:visited, &:active {
+    color: var(--sidebarBackground);
+  }
 
   &:hover {
     background: ${darken(0.08, '#fff')};
   }
-
 
   svg {
     margin: 0 auto;
@@ -146,6 +165,7 @@ export const GoToBlog = styled.div`
 `;
 
 export const GoToBlogText = styled.p`
+  text-decoration: none;
   margin: 0 auto;
   margin-top: 10px;
   text-align: center;
@@ -153,3 +173,17 @@ export const GoToBlogText = styled.p`
   font-weight: bold;
   color: var(--sidebarBackground);
 `;
+
+export const Continue = styled(Link)`
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7159c1;
+  transition: color 0.5s;
+
+  &:hover, &:link, &:visited, &:active {
+    color: var(--sidebarBackground);
+  }
+
+`

@@ -32,5 +32,5 @@ Profile.propTypes = {
       title: PropTypes.string,
       description: PropTypes.string
     })
-  }).isRequired
+  })
 }

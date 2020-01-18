@@ -7,6 +7,7 @@ export const Container = styled.div`
   cursor: pointer;
   
   min-height: 100vh;
+  height: 100%;
   width: 70px;
   padding: 10px;
 

@@ -35,11 +35,11 @@ export const Box = styled(Link)`
 export const BoxTitle = styled.h1`
   font-size: 48px;
   font-weight: bold;
+  text-align: center;
   color: #fff;
 `;
 
 export const BoxTypist = styled(ReactRotatingText)`
   font-size: 36px;
   margin-top: 15px;
-`
-;
+`;
