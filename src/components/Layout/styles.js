@@ -9,9 +9,7 @@ export const CollapsedAside = styled.aside`
 `;
 
 export const Main = styled.main`
-  
   background: var(--mainBackground);
   min-height: 100vh;
-  padding: 30px;
   width: 100%;
 `;

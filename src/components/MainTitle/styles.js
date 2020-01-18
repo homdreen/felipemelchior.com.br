@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { darken } from 'polished';
 import ReactRotatingText from 'react-rotating-text';
 
@@ -12,11 +13,12 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const Box = styled.div`
+export const Box = styled(Link)`
   height: 200px;
   width: 700px;
   background: #5B2D89;
-  border-radius: 20px;
+  border-radius: 10px;
+  text-decoration: none;
 
   display: flex;
   flex-direction: column;

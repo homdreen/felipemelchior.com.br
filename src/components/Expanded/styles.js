@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const MenuGroup = styled.ul`
   margin-top: 15px;
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-direction: column;
   list-style: none;
 
@@ -28,10 +28,7 @@ export const MenuLink = styled(Link)`
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
-  /* border-bottom: 2px solid var(--inactive); */
   transition: color 0.2s;
-
- 
 
   &:hover {
     color: var(--active);
