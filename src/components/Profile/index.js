@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Avatar from '../Avatar';
-// import { Container } from './styles';
+import { Container, Title, Description } from './styles';
 
 export default function Profile() {
   const { site: { siteMetadata: { title, description } } } = useStaticQuery(graphql`
@@ -18,11 +18,11 @@ export default function Profile() {
   `)
 
   return (
-    <div>
+    <Container>
       <Avatar />
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </div>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+    </Container>
   );
 }
 
