@@ -5,6 +5,8 @@ import { graphql } from 'gatsby';
 import Layout from '../../components/Layout'; 
 import SEO from '../../components/seo'; 
 
+import PostCall from '../../components/PostCall';
+
 import { ContentWrapper } from './styles';
 
 export const query = graphql`
@@ -35,7 +37,7 @@ export default function BlogList({ data }) {
     <Layout>
       <SEO title="Blog" />
         <ContentWrapper>
-          <p>teste</p>
+          <PostCall />
         </ContentWrapper>
 
       {/* <h1>{post.frontmatter.title}</h1>
